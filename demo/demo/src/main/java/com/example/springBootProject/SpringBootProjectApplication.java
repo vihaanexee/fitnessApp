@@ -11,8 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class SpringBootProjectApplication {
 
-	@GetMapping("/hello")
-	public String sayHello() {
-		return "Hello, Spring Boot!";
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootProjectApplication.class, args);
+
 	}
-}
+		@GetMapping("/hello")
+		public String sayHello () {
+			return "Hello, World!";
+		}
+	}
+
